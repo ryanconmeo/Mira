@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=pirScreenSaverTest
+Comment=
+Exec= python3 /home/pi/Desktop/scripts/pirScreenSaverTest.py
+StartupNotify=false
+Terminal=true
+Hidden=false
+

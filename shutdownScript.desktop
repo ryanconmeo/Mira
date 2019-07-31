@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Shutdown_Script
+Comment=
+Exec= python3 /home/pi/Desktop/scripts/shutdownScript.py
+StartupNotify=false
+Terminal=true
+Hidden=false
+
