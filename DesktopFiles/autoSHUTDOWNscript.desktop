@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Name=Shutdown_Script
+Name=SHUTDOWNscript
 Comment=
-Exec= python3 /home/pi/GitHub/Mira/shutdownScript.py
+Exec= python3 /home/pi/GitHub/Mira/PythonScripts/SHUTDOWN.py
 StartupNotify=false
 Terminal=true
 Hidden=false
