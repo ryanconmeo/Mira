@@ -7,50 +7,55 @@
 
 <body>
 
-    <div id="navigationbar">
-        <div id="widget">
+    <div id="widgetbar">
 
-            <ul>
-                <li><input type="button" value="Reset" onClick="location.href=location.href"></li>
+        <ul id="widgetlist">
+            <li><input type="button" value="Reset" onClick="location.href=location.href"></li>
 
-                <li> <img id="picture1" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+            <li>
+                <img id="picture1" class="widgetcontainer smallcontainer" src="https://source.unsplash.com/random/150x150" draggable="true" ondragstart="drag(event)" />
+            </li>
 
-                <li> <img id="picture2" src="https://picsum.photos/200/300/?random" draggable="true" ondragstart="drag(event)" width="150" height="150"></li>
+            <li>
+                <img id="picture2" class="widgetcontainer smallcontainer" src="https://picsum.photos/150/150/?random" draggable="true" ondragstart="drag(event)">
+            </li>
 
-                <li>
-                    <div id="clockcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                        <iframe id="clock" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' height=200 width=250 frameborder="0" seamless></iframe>
-                    </div>
-                </li>
+            <li>
+                <div id="clockcontainer" class="widgetcontainer rectanglecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <iframe id="clock" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York" scrolling='no' frameborder="0" seamless></iframe>
+                </div>
+            </li>
 
-                <li>
-                    <div id="youtubecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                        <iframe id="youtube" src="https://www.youtube.com/embed/y1yFiotx3qk" width="250" height="200" frameborder="0"></iframe>
-                    </div>
-                </li>
+            <li>
+                <div id="weathercontainer" class="widgetcontainer rectanglecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <script type='text/javascript' src='https://darksky.net/widget/default-small/42.360082,-71.05888/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=b9b9b9&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us'></script>
+                </div>
+            </li>
 
-                <li>
-                    <div id="calendarcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23666666&amp;src=pefjc031%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" style="border-width:0" width="250" height="300" scrolling="no" frameborder="0"></iframe>
-                    </div>
-                </li>
+            <li>
+                <div id="youtubecontainer" class="widgetcontainer largecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <iframe id="youtube" src="https://www.youtube.com/embed/y1yFiotx3qk" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </li>
 
-                <li>
-                    <div id="notepadcontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTbbZ9Rcqsb4B4ymU7n0oMcfrRXLfY8ic7hrxDyYdnbGNSnWUsaI-PbmUixfscd0kXBqHj8VeUeQZho/pub?embedded=true" width="250" height="300" scrolling="no" frameborder="0"></iframe>
-                    </div>
-                </li>
+            <li>
+                <div id="calendarcontainer" class="widgetcontainer largecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=1&amp;bgcolor=%23666666&amp;src=pefjc031%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FNew_York" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </li>
 
-                <li>
-                    <div id="weathercontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                        <script type='text/javascript' src='https://darksky.net/widget/default-small/42.360082,-71.05888/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=b9b9b9&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Default&customFont=&units=us'></script>
-                    </div>
-                </li>
-            </ul>
+            <li>
+                <div id="notepadcontainer" class="widgetcontainer largecontainer" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+                    <iframe id="notepad" src="https://docs.google.com/document/d/e/2PACX-1vTbbZ9Rcqsb4B4ymU7n0oMcfrRXLfY8ic7hrxDyYdnbGNSnWUsaI-PbmUixfscd0kXBqHj8VeUeQZho/pub?embedded=true" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </li>
 
-        </div> <!--End widget div-->
-    </div> <!--End navigation bar div-->
-    <!-- Declaring all 66 individual grid divs -->
+
+        </ul> <!--End widgetlist-->
+
+    </div> <!--End widgetbar div-->
+
+    <!-- Declaring all 72 individual grid divs -->
     <div id="gridcontainer">
         <div id="grid1" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div id="grid2" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -118,6 +123,13 @@
         <div id="grid64" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div id="grid65" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <div id="grid66" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid67" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid68" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid69" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid70" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid71" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="grid72" class="grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
     </div>
 
 </body>
