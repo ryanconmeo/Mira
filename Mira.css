@@ -1,0 +1,133 @@
+body {
+    background: black;
+}
+
+/*#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7, #grid8, #grid9, #grid10, #grid11, #grid12, #grid13, #grid14, #grid15, #grid16, #grid17, #grid18, #grid19, #grid20, #grid21, #grid22, #grid23, #grid23,
+            #grid24, #grid25, #grid26, #grid27, #grid28, #grid29, #grid30, #grid31, #grid32, #grid33, #grid34, #grid35, #grid36, #grid37, #grid38, #grid39, #grid40, #grid41, #grid42, #grid43, #grid44, #grid45, #grid46,
+        #grid47, #grid48, #grid49, #grid50, #grid51, #grid52, #grid53, #grid54, #grid55, #grid56, #grid57, #grid58, #grid59, #grid60, #grid61, #grid62, #grid63, #grid64, #grid65, #grid66*/
+div.grid {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border: 1px clear;
+    float: right;
+    /*top: 5px;*/
+    z-index: 1;
+}
+
+#navigationbar #widget {
+    position: absolute;
+    top: 6%;
+    left: -395px;
+    /*left: -10%;*/
+    transition: 0.5s;
+    padding: 15px;
+    width: 400px;
+    /*color: #202020;*/
+    background-color: #202020;
+    border-radius: 0 5px 5px 0;
+}
+
+#navigationbar #widget:hover {
+    left: 0;
+    z-index: 2;
+}
+
+#widget {
+    /*top: 90px;*/
+    /*background-color: #202020;*/
+}
+
+#clockcontainer {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px clear;
+    float: left;
+    top: 5px;
+    z-index: 3;
+}
+
+#youtubecontainer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px clear;
+    float: left;
+    top: 5px;
+    z-index: 3;
+}
+
+#calendarcontainer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px clear;
+    float: left;
+    top: 5px;
+    z-index: 3;
+}
+
+#weathercontainer {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px clear;
+    float: left;
+    top: 5px;
+    z-index: 3;
+}
+
+#notepadcontainer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px clear;
+    float: left;
+    top: 5px;
+    z-index: 3;
+}
+
+#clock {
+    z-index: -1;
+    position: relative;
+    left: 40px;
+}
+
+#youtube {
+    position: relative;
+    left: 30px;
+}
+
+#calendar {
+    position: relative;
+    left: 100px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+iframe {
+    /*display:block;*/
+    /*width: 100%;*/
+}
+
+img {
+    cursor: pointer;
+}
+
+input {
+    background-color: black;
+    color: white;
+}
+
+div:hover {
+    background-color: gray;
+}
