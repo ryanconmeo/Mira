@@ -59,19 +59,18 @@ div:hover {
     background-color: gray;
 }
 
-iframe.widget {
+/*iframe.widget {
     z-index: 3;
 }
 
     iframe.widget:hover {
-        z-index: 0;
-    }
+        
+    }*/
 
 #widgetbar {
     position: absolute;
-    top: 6%;
-    left: -395px;
-    /*left: -10%;*/
+    top: 50px;
+    left: -400px;
     transition: 0.5s;
     padding: 15px;
     width: 400px;
@@ -99,7 +98,7 @@ iframe.widget {
     position: relative;
     height: 200px;
     width: 250px;
-    left: 30px;
+    left: 25px;
 }
 
 #notepad {
