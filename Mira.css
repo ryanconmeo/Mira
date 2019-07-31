@@ -14,23 +14,24 @@ div.grid {
     top: 5px;
 }
 
-#navigationbar a {
+#navigationbar #widget {
     position: absolute;
     left: -395px;
     transition: 0.5s;
     padding: 15px;
     width: 400px;
-    color: #202020;
+    /*color: #202020;*/
+    background-color: #202020;
     border-radius: 0 5px 5px 0;
+}
+
+#navigationbar #widget:hover {
+    left: 0;
 }
 
 #widget {
     top: 55px;
-    background-color: #202020;
-}
-
-#navigationbar a:hover {
-    left: 0;
+    /*background-color: #202020;*/
 }
 
 #clockcontainer {
@@ -111,7 +112,7 @@ p {
 
 iframe {
     /*display:block;*/
-    width: 100%;
+    /*width: 100%;*/
 }
 
 img {
